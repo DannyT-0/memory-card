@@ -4,13 +4,17 @@ import Header from "./Components/Header";
 import Score from "./Components/Score";
 
 function App() {
+	function handleClick() {
+		console.log("iwork");
+	}
+
 	return (
 		<div>
 			<div className="header-section">
 				<Header />
 				<Score />
 			</div>
-			<Card />
+			<Card handleClick={handleClick} />
 		</div>
 	);
 }
