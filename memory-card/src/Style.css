@@ -31,9 +31,14 @@ img{
   width:200px;
 }
 
+.card-container:hover{
+  background-color: rgb(217, 219, 220);
+}
+
 .card-game{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  margin-left: 50px;
 }
