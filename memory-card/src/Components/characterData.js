@@ -1,89 +1,76 @@
-// import dipper from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/dipper-pines.png";
-// import bill from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/bill-cipher.png";
-// import candy from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/candy-chiu.png";
-// import gideon from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gideon.png";
-// import gnome from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gnome-rainbow.png";
-// import grunkle from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/grunkle-stan.png";
-// import mabel from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/mabel-pines.png";
-// import oldman from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/old-man.png";
-// import soos from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/soos.png";
-// import stanford from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/stanford.png";
-// import waddles from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/waddles.png";
-// import wendy from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/wendy.png";
+/* eslint-disable import/no-anonymous-default-export */
+import dipper from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/dipper-pines.png";
+import candy from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/candy-chiu.png";
+import bill from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/bill-cipher.png";
+import gideon from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gideon.png";
+import grunkle from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/grunkle-stan.png";
+import mabel from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/mabel-pines.png";
+import gnome from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gnome-rainbow.png";
+import mcgucket from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/old-man.png";
+import soos from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/soos.png";
+import stanford from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/stanford.png";
+import waddles from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/waddles.png";
+import wendy from "/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/wendy.png";
 
-// let characters = [];
-
-export let characters = [
+export default [
 	{
 		name: "Dipper pines",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/dipper-pines.png",
+		charImage: dipper,
 		id: 0,
 	},
 	{
 		name: "Candy Chiu",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/candy-chiu.png",
+		charImage: candy,
 		id: 1,
 	},
 	{
 		name: "Bill Cipher",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/bill-cipher.png",
+		charImage: bill,
 		id: 2,
 	},
 	{
 		name: "Lil Gideon",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gideon.png",
+		charImage: gideon,
 		id: 3,
 	},
 	{
 		name: "Grunkle Stan",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/grunkle-stan.png",
+		charImage: grunkle,
 		id: 4,
 	},
 	{
 		name: "Rainbow Gnome",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/gnome-rainbow.png",
+		charImage: gnome,
 		id: 5,
 	},
 	{
 		name: "Mabel Pines",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/mabel-pines.png",
+		charImage: mabel,
 		id: 6,
 	},
 	{
 		name: "Old Man McGucket",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/old-man.png",
+		charImage: mcgucket,
 		id: 7,
 	},
 	{
 		name: "Soos",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/soos.png",
+		charImage: soos,
 		id: 8,
 	},
 	{
 		name: "Stanford Pines",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/stanford.png",
+		charImage: stanford,
 		id: 9,
 	},
 	{
 		name: "Waddles",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/waddles.png",
+		charImage: waddles,
 		id: 10,
 	},
 	{
 		name: "Wendy",
-		charImage:
-			"/Users/danny/Desktop/the_odin_project/react-section/memory-card-react/memory-card/memory-card/src/character-pics/wendy.png",
+		charImage: wendy,
 		id: 11,
 	},
 ];

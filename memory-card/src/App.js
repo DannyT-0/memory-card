@@ -14,7 +14,7 @@ function App() {
 				<Header />
 				<Score />
 			</div>
-			<Card handleClick={handleClick} />
+			<Card onClick={handleClick} />
 		</div>
 	);
 }
