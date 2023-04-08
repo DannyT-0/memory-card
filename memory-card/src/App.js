@@ -5,7 +5,7 @@ import Score from "./Components/Score";
 import characters from "./Components/characterData";
 
 function App() {
-	let bestScore = 0;
+	const [bestScore, setBestScore] = React.useState(0);
 
 	const [score, setScore] = React.useState(0);
 
@@ -22,14 +22,24 @@ function App() {
 
 	const [cardGame, setCardGame] = React.useState(gravityFallsChars);
 
-	const [newArray, setNewArray] = React.useState([]);
+	const [clickedArray, setClickedArray] = React.useState([]);
 
 	function handleClick(e) {
-		newArray.push(e.target.alt);
-		console.log(newArray);
 		const randomCardGame = [...cardGame];
 		setCardGame(shuffle(randomCardGame));
-		setScore(score + 1);
+
+		if (clickedArray.find((item) => item === e.target.alt)) {
+			setScore(0);
+			setClickedArray([]);
+			if (bestScore > score) {
+				setBestScore(bestScore);
+			} else {
+				setBestScore(score);
+			}
+		} else {
+			clickedArray.push(e.target.alt);
+			setScore(score + 1);
+		}
 	}
 
 	function shuffle(array) {
@@ -62,13 +72,3 @@ function App() {
 }
 
 export default App;
-
-// const alreadyClicked = [];
-
-// function(handleClick(e){
-//   if(alreadyClicked.find(i=>i === e.target.alt)){
-//   //then already clicked on
-//   ) else {
-//   //not already clicked on
-//   }
-// }
